@@ -25,7 +25,6 @@
   <p>Sudah punya akun? <a href="index.html">Login di sini</a></p>
 </div>
 
-<?php if (isset($_GET['status']) && $_GET['status'] == 'exist'): ?>
 <script>
   Swal.fire({
     icon: 'warning',
@@ -34,9 +33,7 @@
     showConfirmButton: false
   });
 </script>
-<?php endif; ?>
 
-<?php if (isset($_GET['status']) && $_GET['status'] == 'failed'): ?>
 <script>
   Swal.fire({
     icon: 'error',
@@ -44,7 +41,6 @@
     text: 'Terjadi kesalahan, coba lagi.'
   });
 </script>
-<?php endif; ?>
 
 </body>
 </html>
