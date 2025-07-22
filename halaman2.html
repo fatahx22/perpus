@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perpustakaan Digital</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    .buku {
+      background-color: white;
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .judul-buku {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .penulis {
+      color: #777;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Perpustakaan Digital</h1>
+    <script>
+        alert("selamat datang di perpustakaan digital");
+        var nama = prompt("siapa nama anda ?", "");
+
+        document.write("<h3>selamat datang "+ nama + "</h3>");
+    </script>
+    <p>Temukan berbagai koleksi buku menarik.</p>
+  </header>
+
+  <main>
+    <div class="buku">
+      <div class="judul-buku">Laskar Pelangi</div>
+      <div class="penulis">oleh Andrea Hirata</div>
+      <p>Kisah inspiratif tentang anak-anak desa yang berjuang demi pendidikan.</p>
+    </div>
+
+    <div class="buku">
+      <div class="judul-buku">Bumi</div>
+      <div class="penulis">oleh Tere Liye</div>
+      <p>Petualangan remaja dengan kekuatan luar biasa di dunia paralel.</p>
+    </div>
+
+    <div class="buku">
+      <div class="judul-buku">Negeri 5 Menara</div>
+      <div class="penulis">oleh Ahmad Fuadi</div>
+      <p>Mengisahkan perjalanan anak pesantren yang bermimpi tinggi dan menjelajah dunia.</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Perpustakaan Digital. Semua hak dilindungi.
+  </footer>
+
+</body>
+</html>

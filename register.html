@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body { font-family: Arial; background: #f0f0f0; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    .register-container { background: white; padding: 20px; border-radius: 8px; width: 300px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    input { width: 100%; padding: 10px; margin: 10px 0; }
+    button { width: 100%; padding: 10px; background: #4CAF50; color: white; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<div class="register-container">
+  <h2>Register</h2>
+  <form action="" method="POST">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit">Daftar</button>
+  </form>
+  <p>Sudah punya akun? <a href="index.php">Login di sini</a></p>
+</div>
+
+<?php if (isset($_GET['status']) && $_GET['status'] == 'exist'): ?>
+<script>
+  Swal.fire({
+    icon: 'warning',
+    title: 'Username sudah terdaftar!',
+    timer: 1500,
+    showConfirmButton: false
+  });
+</script>
+<?php endif; ?>
+
+<?php if (isset($_GET['status']) && $_GET['status'] == 'failed'): ?>
+<script>
+  Swal.fire({
+    icon: 'error',
+    title: 'Register gagal!',
+    text: 'Terjadi kesalahan, coba lagi.'
+  });
+</script>
+<?php endif; ?>
+
+</body>
+</html>
